@@ -1,0 +1,72 @@
+In Java, a thread is a lightweight subprocess, a separate path of execution within a program. Threads allow concurrent execution of tasks, enabling a program to perform multiple operations simultaneously. Threads are used to achieve multitasking and improve the performance of applications that need to perform multiple tasks concurrently.
+
+### Creating Threads in Java:
+
+There are two main ways to create threads in Java:
+
+1. **Extending the `Thread` Class:** You can create a new class that extends the `Thread` class and overrides the `run()` method to define the code that the thread will execute. Here's an example:
+
+   ```java
+   class MyThread extends Thread {
+       public void run() {
+           System.out.println("Thread running");
+       }
+   }
+
+   public class Main {
+       public static void main(String[] args) {
+           MyThread thread = new MyThread();
+           thread.start(); // Start the thread
+       }
+   }
+   ```
+
+2. **Implementing the `Runnable` Interface:** You can implement the `Runnable` interface and pass an instance of this implementation to a `Thread` object. This approach separates the thread's behavior from the `Thread` class, which is often preferred for better code organization and reusability. Here's an example:
+
+   ```java
+   class MyRunnable implements Runnable {
+       public void run() {
+           System.out.println("Thread running");
+       }
+   }
+
+   public class Main {
+       public static void main(String[] args) {
+           MyRunnable runnable = new MyRunnable();
+           Thread thread = new Thread(runnable);
+           thread.start(); // Start the thread
+       }
+   }
+   ```
+
+### Thread States:
+
+- **New:** A thread is in the new state if it has been created but not yet started.
+- **Runnable:** A thread is in the runnable state if it is ready to run, but the scheduler has not selected it to be the running thread.
+- **Running:** A thread is in the running state if the operating system has selected it to run.
+- **Blocked/Waiting:** A thread is in the blocked or waiting state if it is waiting for a monitor lock, I/O operation, or another thread to perform a task.
+- **Terminated:** A thread is in the terminated state if it has completed execution or terminated abnormally.
+
+### Thread Lifecycle:
+
+- **Creation:** A new thread is created.
+- **Runnable:** The thread is ready to run.
+- **Running:** The thread is executing its task.
+- **Blocked:** The thread is waiting for a resource.
+- **Terminated:** The thread has completed its task or terminated abnormally.
+
+### Thread Synchronization:
+
+Java provides synchronization mechanisms to ensure that only one thread accesses a shared resource at a time. This helps prevent data corruption and race conditions. Synchronization can be achieved using the `synchronized` keyword or by using the `java.util.concurrent` package.
+
+### Thread Safety:
+
+Thread safety is the property of code that guarantees safe execution by multiple threads simultaneously. It is achieved through synchronization and careful design of data structures and algorithms.
+
+### Benefits of Using Threads in Java:
+
+- **Concurrency:** Threads allow multiple tasks to be executed concurrently, improving the overall performance of the application.
+- **Responsiveness:** Threads can keep the application responsive by allowing certain tasks to run in the background while the main thread handles user interaction.
+- **Resource Utilization:** Threads can help in better utilizing system resources, such as CPU and memory.
+
+In summary, threads in Java provide a powerful mechanism for achieving concurrency and multitasking, allowing developers to create efficient and responsive applications. However, care must be taken to ensure thread safety and avoid issues such as deadlock and race conditions.
