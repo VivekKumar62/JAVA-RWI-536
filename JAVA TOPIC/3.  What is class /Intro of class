@@ -1,0 +1,28 @@
+In Java, a class is a blueprint or template that defines the attributes (fields) and behaviors (methods) that objects of the class will have. It serves as a blueprint from which individual objects are created. Here's a breakdown of the key components of a Java class:
+
+Fields (Variables): Fields represent the data/state of an object. They can be of various data types (e.g., int, String, boolean) and can be either instance variables (belonging to each object) or static variables (shared among all objects of the class).
+
+Methods (Functions): Methods define the behavior of an object. They can perform actions, manipulate data, or provide information about the object. Methods can be instance methods (operate on instance variables) or static methods (do not require an instance of the class to be invoked).
+
+Constructors: Constructors are special methods used for initializing objects. They have the same name as the class and do not have a return type. Constructors are invoked when an object of the class is created using the new keyword.
+
+Access Modifiers: Classes, fields, and methods can have access modifiers (e.g., public, private, protected) to control their visibility and accessibility from other classes.
+
+Class Members: In addition to fields and methods, a class can also contain static blocks, instance initialization blocks, and nested classes.
+
+public class Car {
+    // Fields
+    String brand;
+    int year;
+    
+    // Constructor
+    public Car(String brand, int year) {
+        this.brand = brand;
+        this.year = year;
+    }
+    
+    // Method
+    public void start() {
+        System.out.println("The " + year + " " + brand + " starts.");
+    }
+}
