@@ -1,0 +1,106 @@
+OOPS -
+OBJECT ORIENTED PROGRAMMING :
+OOPs stands for object oriented programming principle.
+There are four pillars of OOPs :
+1. Encapsulation
+2. Polymorphism
+3. Inheritance
+4. Data abstraction
+
+--------------******************************----------------------
+Class is the collection of Data Members and Members Function.
+Data Members : These are the attributes and properties of a class.
+Members Function : These are the functions which are performed by the object of a class.
+Object : Object is the instance of the CLASS . i.e., it is a real-life entity that represent a class.
+
+-------------****************************--------------
+ENCAPSULATION :
+The wrapping up or bundling up of Data Members and Member Functions into a single unit is called
+Encapsulation.
+The best advantages of Encapsulation is security, because we can restrict the flow of our data by
+using access modifiers i.e. public, private, protected, and default.
+What is static?
+If something is static, then it is not compulsory to call it with an object, we can call it directly by using
+the class name.
+Real-life example of Encapsulation :
+Capsule: Just like in capsule various medicines are capsulated inside the shell protects from external
+environment. Similarly, access modifiers inside a class prevents unauthorized access of data.
+
+----------------*******************************************--------------
+
+POLYMORPHISM :
+Poly means “Many” and morph means “Forms”;
+The ability to acquire multiple forms is called Polymorphism.
+Real-life example of polymorphism:
+The real-life example of polymorphism can be “Umbrella” which can be used in rainy season to
+protect us from rain and it can be also used in summer season to protect us from the heat
+waves of sun.
+Polymorphism are of two types :
+1. Compile-time Polymorphism
+2. Run-time Polymorphism
+
+----------------********************************************************------------
+
+POLYMORPHISM :
+Poly means “Many” and morph means “Forms”;
+The ability to acquire multiple forms is called Polymorphism.
+Real-life example of polymorphism:
+The real-life example of polymorphism can be “Umbrella” which can be used in rainy season to
+protect us from rain and it can be also used in summer season to protect us from the heat
+waves of sun.
+Polymorphism are of two types :
+1. Compile-time Polymorphism
+2. Run-time Polymorphism
+
+COMPILE TIME POLYMORPHISM :
+Compile-time Polymorphism are of three types:
+1. Function Overloading: When there are various functions with the same name but different
+arguments in the same class then it is known as the function overloading.
+2. Constructor Overloading: When there are various constructor with the same name but
+different arguments then it is called as constructor overloading.
+3. Operator Overloading: When a single operator can perform multiple operations, then it is
+called operator overloading
+
+RUN TIME POLYMORPHISM :
+Run-time Polymorphism includes function overriding:
+Function Overriding:
+When there are two functions with the same name and same arguments but present in
+different classes, one is present in parent class and other one is redefined in a child class, so this
+process of redefining is called Function Overriding.
+
+---------------***********************************************************-----------------
+
+INHERITANCE :
+The property to inherit the properties of other classes is called inheritance.
+The best advantage of inheritance is Code Reusability.
+Types of Inheritance :
+1. Single Inheritance
+2. Multilevel Inheritance
+3. Multiple Inheritance
+4. Hierarchical Inheritance
+5. Hybrid Inheritance
+
+---------------***********************************************************-----------------
+
+TYPES OF INHERITANCE :
+1. Single Inheritance: In this Inheritance we have only one child class and one parent class.
+• Parent class is known as the base class.
+• Child class is known as the derived class.
+2. Multi-level Inheritance: Multi-level Inheritance is just like Grandfather, Father and Son relationship, A class can
+extend the property of another class and that another class extend the property of some other class, this is called
+as Multi-level Inheritance.
+3. Multiple Inheritance: When there is a single child class which extends the property of multiple parent classes
+then it is called as multiple inheritance.
+4. Hierarchical Inheritance: In the hierarchical Inheritance, there is only one parent class but multiple child classes.
+5. Hybrid Inheritance: It is the combination of any two types of inheritance.
+
+---------------***********************************************************-----------------
+
+DATA ABSTRACTION :
+Showing only abstract idea and hiding the implementation is called Data Abstraction .
+There are two ways to achieve data abstraction.
+1. Interfaces: It is a way to achieve 100% data abstraction, because all the method inside the
+interface are only declared not even a single method is defined.
+2. Abstract Class: It is a way to achieve the partial data abstraction because inside an abstract
+class some method are declared and some method are defined.
+NOTE : We cannot create object of interfaces and abstract class .
