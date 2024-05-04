@@ -1,0 +1,3 @@
+In multithreading, a method refers to a block of code that defines the behavior of a thread. Methods are used to encapsulate logic
+and functionality that can be executed by threads concurrently. In Java, methods can be used to define the behavior of a thread by
+extending the Thread class or implementing the Runnable interface.
