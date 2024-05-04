@@ -1,0 +1,3 @@
+ An array is a data structure that allows you to store a fixed-size sequential collection of elements of the same type. 
+ Each element in an array is accessed by its index. The index of the first element is 0, the index of the second element is 1, 
+ and so on. Arrays can hold primitive data types (such as int, float, char, etc.) as well as objects (which includes arrays of objects).
