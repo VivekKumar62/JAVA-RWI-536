@@ -1,0 +1,31 @@
+In Java, an object is an instance of a class. It is a runtime entity that represents a real-world entity with
+its attributes (fields) and behaviors (methods). Objects are created using the new keyword followed by a call 
+to a constructor of the class. Each object has its own set of instance variables and can invoke methods defined in its class.
+public class Car {
+    String brand;
+    int year;
+    
+    public Car(String brand, int year) {
+        this.brand = brand;
+        this.year = year;
+    }
+    
+    public void start() {
+        System.out.println("The " + year + " " + brand + " starts.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating objects of class Car
+        Car car1 = new Car("Toyota", 2020);
+        Car car2 = new Car("Honda", 2019);
+        
+        // Accessing fields and invoking methods
+        System.out.println("Car 1: " + car1.brand + " " + car1.year);
+        car1.start();
+        
+        System.out.println("Car 2: " + car2.brand + " " + car2.year);
+        car2.start();
+    }
+}
