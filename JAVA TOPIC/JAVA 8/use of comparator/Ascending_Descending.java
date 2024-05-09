@@ -24,5 +24,8 @@ public class Ascending_Descending {
         ss.add(33);
         ss.add(48);
         System.out.println("After manial sorting desc: " +ss);
+        
+        // before maniual sorting[1, 39, 48, 59, 69]
+        //After manial sorting desc: [48, 33, 22]
     }
 }
