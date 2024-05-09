@@ -8,25 +8,25 @@ public class Student_class {
         Student s2 = new Student(32, "Marvel");
         Student s3 = new Student(33, "Ayushman");
         List<Student> li = new ArrayList<Student>();
-        li.add(s1);
+          li.add(s1);
         li.add(s2);
-        li.add(s3);
-        Collections.sort(li, (a, b) -> b.id - a.id);
+    li.add(s3);
+         Collections.sort(li, (a, b) -> b.id - a.id);
         System.out.println(li);
     }
 }
 
 class Student {
     public Integer id;
-    public String name;
+     public String name;
 
     public Student(Integer id, String name) {
-        this.id = id;
+          this.id = id;
         this.name = name;
     }
 
     public String toString() {
-        return this.id + ": " + this.name;
+                return this.id + ": " + this.name;
     }
 }
 
