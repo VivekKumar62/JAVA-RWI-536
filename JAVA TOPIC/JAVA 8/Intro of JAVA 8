@@ -1,0 +1,87 @@
+Java 8 introduced several key features that significantly impacted Java programming. Here's a breakdown of some of the most important ones:
+
+**1. Lambda Expressions:**
+
+* Allow creating anonymous methods concisely.
+* Useful for passing code blocks as arguments or implementing functional interfaces (explained later).
+* Example:
+  ```java
+  (x, y) -> x + y;  // Lambda expression for addition
+  ```
+
+**2. Functional Interfaces:**
+
+* Interfaces with a single abstract method.
+* Lambda expressions can be used to implement them, promoting cleaner code.
+* Example:
+  ```java
+  @FunctionalInterface
+  interface Adder {
+      int add(int x, int y);
+  }
+  ```
+
+**3. Method References:**
+
+* Provide a compact way to refer to existing methods using the colon (:) operator.
+* Can be used instead of lambda expressions when they only call a single method.
+* Improve code readability in certain situations.
+* Example (using the Adder interface from above):
+  ```java
+  Adder adder = Integer::sum; // Method reference to Integer.sum(int, int)
+  ```
+
+**4. Stream API:**
+
+* Introduced for processing collections of objects in a declarative way.
+* Offers operations like filtering, mapping, reducing, etc.
+* Enables concise and efficient data manipulation.
+* Example:
+  ```java
+  List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+  numbers.stream()
+         .filter(x -> x % 2 == 0) // Filter even numbers
+         .forEach(System.out::println); // Print each even number
+  ```
+
+**5. Default and Static Methods in Interfaces:**
+
+* Allow interfaces to define default implementations for methods.
+* Static methods can be utility methods accessible through the interface name.
+* Enhance flexibility and reusability of interfaces.
+* Example:
+  ```java
+  interface MathOperations {
+      int add(int x, int y);
+
+      default int subtract(int x, int y) {
+          return x - y;
+      }
+
+      static double PI() {
+          return 3.14159;
+      }
+  }
+  ```
+
+**6. Optional Class:**
+
+* Represents a value that may be present or absent.
+* Helps avoid NullPointerExceptions by providing methods for handling null values safely.
+* Example:
+  ```java
+  String name = getUser().getName().orElse("Default Name");  // Get user name or default if null
+  ```
+
+**7. Date and Time API (java.time package):**
+
+* Replaces the old java.util.Date and Calendar classes.
+* Provides a more intuitive and modern API for working with dates and times.
+* Example:
+  ```java
+  LocalDate today = LocalDate.now();
+  ```
+
+These are some of the major features introduced in Java 8. They have transformed Java development, making it more concise, expressive, and functional.
+
+It's important to note that Java 8 also introduced improvements to the Collection API (e.g., forEach method), Concurrency API, and I/O functionalities. You can find more details about these features in the official Java documentation or online tutorials.
