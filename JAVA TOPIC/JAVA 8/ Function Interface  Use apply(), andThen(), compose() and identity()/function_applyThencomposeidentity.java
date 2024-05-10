@@ -9,7 +9,8 @@ public class function_applyThencomposeidentity {
         System.out.println(function1.compose(function2).apply(4)); // 128
 
         Function<String,String> myidentity = Function.identity();
-        System.out.println(myidentity.apply("Ashish sir") ); //Ashish sir , jo aap inout mai doge
-                                                                // wahi output mai aayega  
+        System.out.println(myidentity.apply("Ashish ") );  //Ashish , jo aap input mai doge wahi output mai aayega  
+        
+       
     }
 }
