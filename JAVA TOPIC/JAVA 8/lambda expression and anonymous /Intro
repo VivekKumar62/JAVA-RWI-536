@@ -1,0 +1,3 @@
+An anonymous class is an expression assigned to a reference variable of the class or interface it implements.
+Therefore, we also put a semicolon at the end. On the other hand, a lambda expression is a method without a name.
+We provide the signature of the unimplemented method in the functional interface without a name.
