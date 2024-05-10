@@ -1,0 +1,7 @@
+
+The Function interface in Java 8 provides several methods that allow you to compose functions and apply them to inputs. Here's how you can use apply(), andThen(), compose(), and identity():
+
+apply(): Applies the function to the given argument and returns the result.
+andThen(): Returns a composed function that first applies the current function to the input, and then applies the after function to the result.
+compose(): Returns a composed function that first applies the before function to the input, and then applies the current function to the result.
+identity(): Returns a function that always returns its input argument.
