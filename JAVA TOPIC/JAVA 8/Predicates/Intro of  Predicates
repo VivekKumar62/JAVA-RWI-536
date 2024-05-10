@@ -1,0 +1,8 @@
+In Java 8, the Predicates class is a utility class in the java.util.function package that provides static factory methods for creating instances of the Predicate functional interface. A Predicate is a functional interface that represents a boolean-valued function of one argument. It is often used for filtering elements in a collection or testing conditions.
+
+The Predicates class provides various static factory methods for creating Predicate instances. Some commonly used methods include:
+
+isEqual(Object targetRef): Returns a predicate that tests if the input is equal to the specified object.
+not(Predicate<? super T> target): Returns a predicate that negates the specified predicate.
+and(Predicate<? super T>... predicates): Returns a predicate that represents the logical AND of the specified predicates.
+or(Predicate<? super T>... predicates): Returns a predicate that represents the logical OR of the specified predicates.
