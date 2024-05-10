@@ -18,3 +18,5 @@ public class Office {
         System.out.println(employee.getSalary());
     }
 }
+
+//40000
