@@ -1,0 +1,5 @@
+In Java, the BiPredicate interface is a functional interface that represents a predicate (boolean-valued function) of two arguments. 
+It is defined in the java.util.function package as part of the Java Functional Interfaces added in Java 8.
+
+The BiPredicate interface has a single method test(T t, U u) that takes two arguments of types T and U, and returns a boolean.
+It is used to perform a conditional check on two input values and return a boolean result based on the evaluation of the predicate.
