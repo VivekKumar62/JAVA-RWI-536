@@ -1,0 +1,14 @@
+The UnaryOperator and BinaryOperator interfaces are functional interfaces that represent operations on a single operand and two operands respectively, both of the same type. These interfaces are part of the java.util.function package and are used to perform operations and calculations in a functional style.
+
+UnaryOperator<T>:
+
+This interface represents an operation on a single operand of type T.
+It extends the Function<T, T> interface, so it takes a single argument of type T and returns a result of type T.
+The apply method is used to apply the operation to the operand.
+Example usage: UnaryOperator<Integer> square = x -> x * x;
+BinaryOperator<T>:
+
+This interface represents an operation on two operands of type T.
+It extends the BiFunction<T, T, T> interface, so it takes two arguments of type T and returns a result of type T.
+The apply method is used to apply the operation to the two operands.
+Example usage: BinaryOperator<Integer> sum = (x, y) -> x + y;
