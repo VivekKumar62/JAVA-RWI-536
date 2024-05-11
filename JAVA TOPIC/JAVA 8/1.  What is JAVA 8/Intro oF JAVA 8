@@ -1,0 +1,35 @@
+Java 8 is a major release of the Java programming language, which was released by Oracle Corporation in March 2014. It introduced several new features,
+enhancements, and improvements to the Java platform, including:
+
+1. **Lambda Expressions**: Lambda expressions provide a concise way to represent anonymous functions. They enable you to treat functionality as a method
+argument or pass code in a more readable and maintainable way.
+
+2. **Functional Interfaces**: Functional interfaces are interfaces that contain only one abstract method. They are used to support lambda expressions and 
+method references.
+
+3. **Stream API**: The Stream API introduced functional-style operations on streams of elements, allowing for more expressive and efficient ways to process
+collections of objects.
+
+4. **Default Methods**: Default methods allow interfaces to have methods with implementations, providing a way to add new methods to interfaces without 
+breaking existing implementations.
+
+5. **Date and Time API**: Java 8 introduced the java.time package, which provides a comprehensive API for date and time manipulation, addressing many 
+shortcomings of the old java.util.Date and java.util.Calendar classes.
+
+6. **Optional Class**: The Optional class is a container class that may or may not contain a non-null value. It helps in avoiding null pointer exceptions
+and encourages more robust code.
+
+7. **Functional Interfaces**: Java 8 introduced the `@FunctionalInterface` annotation to explicitly mark interfaces as functional interfaces, making the
+intent clear to developers.
+
+8. **Parallel Operations**: The Stream API introduced parallel operations, allowing for parallel execution of operations on streams, which can improve
+performance for large datasets.
+
+9. **Improved Security**: Java 8 introduced several security enhancements, including the TLS 1.2 protocol, stronger key exchange algorithms,
+and improved certificate handling.
+
+10. **Nashorn JavaScript Engine**: Java 8 included the Nashorn JavaScript engine, which provides a high-performance JavaScript runtime environment for 
+Java applications.
+
+Overall, Java 8 was a significant release that introduced several new features and improvements to the Java programming language, making it more modern,
+expressive, and efficient.
