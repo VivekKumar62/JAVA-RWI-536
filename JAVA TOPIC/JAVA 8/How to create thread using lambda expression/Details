@@ -1,0 +1,5 @@
+how to create thread using lambda expression:-
+
+Create the Runnable interface reference and write the Lambda expression for the run() method. Create a Thread class object passing the above-created 
+reference of the Runnable interface since the start() method is defined in the Thread class its object needs to be created. Invoke the start() method to 
+run the thread.
