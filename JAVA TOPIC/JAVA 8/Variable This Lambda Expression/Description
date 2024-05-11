@@ -1,0 +1,5 @@
+Variable This Lambda Expression :-
+
+Lambda expressions introduce a concise way to represent anonymous functions, often used to implement functional interfaces.
+The keyword this within a lambda expression refers to the enclosing instance of the class where the lambda is defined. 
+This is particularly useful in situations where you need to access instance variables or methods of the enclosing class.
