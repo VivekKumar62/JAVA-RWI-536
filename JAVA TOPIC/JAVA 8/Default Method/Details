@@ -1,0 +1,5 @@
+Java 8, default methods were introduced in interfaces. Default methods are methods that have a body and are declared with the default keyword. 
+They allow interfaces to provide method implementations that can be used as a default if a class implementing the interface does not override them.
+
+Default methods were introduced to enhance the functionality of interfaces without breaking existing code. They enable 
+interfaces to evolve by adding new methods without forcing implementing classes to provide an implementation for the new methods.
