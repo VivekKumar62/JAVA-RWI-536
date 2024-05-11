@@ -1,0 +1,22 @@
+In Java, the `Consumer` interface is a functional interface defined in the `java.util.function` package. It represents an operation that accepts a single input argument and returns no result. It's often used for side effects such as printing to the console, updating an object's state, or performing some action on the input without returning a value.
+
+The `Consumer` interface has a single method, `accept`, which takes an argument of type `T` (the input type) and returns void. Here's the signature of the `Consumer` interface:
+
+```java
+@FunctionalInterface
+public interface Consumer<T> {
+    void accept(T t);
+}
+```
+
+You can use a `Consumer` in various scenarios, such as iterating over a collection and performing an action on each element, like so:
+
+```java
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+
+// Using a Consumer to print each element of the list
+Consumer<Integer> printConsumer = num -> System.out.println(num);
+numbers.forEach(printConsumer);
+```
+
+In this example, the `printConsumer` `Consumer` is used with `forEach` to print each element of the `numbers` list.
