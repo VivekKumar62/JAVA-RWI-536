@@ -1,0 +1,7 @@
+the BiFunction interface is a functional interface that represents a function that accepts two arguments and produces a result. It is part of the java.util.function package 
+  introduced in Java 8 as part of the Functional Interface enhancements.
+
+The BiFunction interface has a method apply(T t, U u) that takes two arguments of types T and U, and 
+  returns a result of type R. It is similar to the Function interface, but accepts two arguments instead of one.
+
+  The BiFunction interface allows us to use parameters of different types, with a return value of a third type
