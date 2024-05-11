@@ -1,0 +1,39 @@
+The `Supplier` interface in Java is a functional interface that belongs to the `java.util.function` package. It represents a supplier of results, meaning it doesn't take any arguments but produces a result. The `Supplier` interface has a single method called `get()` that returns a result of a parameterized type.
+
+Here is the definition of the `Supplier` interface:
+
+```java
+@FunctionalInterface
+public interface Supplier<T> {
+    T get();
+}
+```
+
+The `Supplier` interface is often used in scenarios where you need to lazily generate or provide values. Since it doesn't take any arguments, it's suitable for situations where you want to defer the computation of a value until it is actually needed.
+
+One common use case for the `Supplier` interface is lazy initialization. For example, you can use a `Supplier` to initialize a field only when it is first accessed, like this:
+
+```java
+public class LazyInitializationExample {
+    private Supplier<String> lazyValue = () -> {
+        System.out.println("Initializing lazy value");
+        return "Lazy Value";
+    };
+
+    public String getValue() {
+        return lazyValue.get();
+    }
+
+    public static void main(String[] args) {
+        LazyInitializationExample example = new LazyInitializationExample();
+        System.out.println("Before accessing value");
+        System.out.println(example.getValue());
+        System.out.println("After accessing value");
+        System.out.println(example.getValue());
+    }
+}
+```
+
+In this example, the `lazyValue` `Supplier` is initialized with a lambda expression that prints a message and returns a value. The value is only computed when `lazyValue.get()` is called for the first time, demonstrating lazy initialization behavior.
+
+Overall, the `Supplier` interface is a powerful tool in Java for deferred execution and lazy evaluation, providing a clean and concise way to represent code that produces a result without taking any input.
