@@ -1,0 +1,25 @@
+Streams  API was introduced to work with sequences of elements. A `Stream` represents a sequence of objects that supports various methods 
+which can be pipelined to produce the desired result.
+
+Here are some key points about streams in Java 8:
+
+1. **Sequence of Elements:** A stream provides a way to work with sequences of elements, similar to collections but with a different focus.
+Streams don't store elements; instead, they carry values from a source (e.g., a collection, an array, or an I/O channel) through a pipeline of operations.
+
+2. **Functional Programming:** Streams are designed to support functional-style operations on streams of elements, such as `filter`, `map`, `reduce`, 
+`collect`, etc. These operations can be chained together to form a pipeline of operations.
+
+3. **Lazy Evaluation:** Stream operations are evaluated lazily. This means that intermediate operations (like `filter` or `map`) are not evaluated 
+until a terminal operation (like `collect` or `forEach`) is called. This allows for more efficient processing, especially for large or infinite streams.
+
+4. **Parallel Processing:** Streams can be processed in parallel to take advantage of multi-core processors. This can improve performance for certain operations,
+especially for large data sets.
+
+5. **Immutability:** Streams are designed to be immutable, meaning that once created, a stream cannot be modified. Instead, operations on a stream
+produce a new stream.
+
+6. **Integration with Collections:** Streams can be created from collections, arrays, I/O channels, or other sources. They can also be
+converted back to collections or arrays if needed.
+
+Overall, streams in Java 8 provide a powerful and flexible way to work with sequences of elements, enabling more concise and expressive
+code compared to traditional looping constructs.
