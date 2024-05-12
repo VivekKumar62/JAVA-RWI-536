@@ -1,0 +1,20 @@
+
+In Java 8, Optional is a container class that may or may not contain a non-null value. It was introduced to help developers deal with
+situations where a method could potentially return a null value, which can lead to NullPointerExceptions if not handled properly.
+
+Here are some key points about Optional in Java 8:
+
+Avoids NullPointerExceptions: By using Optional, you can explicitly check whether a value is present or not before trying to use it, 
+thus avoiding NullPointerExceptions.
+
+Provides Safe Null Handling: Optional provides methods to safely handle cases where a value may be absent, such as orElse, orElseGet, and orElseThrow.
+
+Encourages Best Practices: The use of Optional encourages developers to write cleaner, more readable code by forcing them to explicitly 
+handle cases where a value may be absent.
+
+Immutable: Instances of Optional are immutable, meaning that once created, their value cannot be changed.
+
+Not Serializable: Optional is not serializable, so it should not be used as a field in a serializable class.
+
+No Null Elements: The of method of Optional does not accept null values; instead, you should use ofNullable if you want to create
+an Optional that may contain a null value.
