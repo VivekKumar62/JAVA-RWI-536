@@ -1,0 +1,29 @@
+JDBC, which stands for Java Database Connectivity, is a Java API (Application Programming Interface) that allows Java programs 
+to interact with databases. It provides a way for Java applications to execute SQL (Structured Query Language) statements to perform 
+tasks like querying data, updating records, and more, all within the context of a database.
+
+Here's a simplified explanation of how JDBC works:
+
+1. **Loading the Driver:** Before you can interact with a database using JDBC, you need to load the appropriate database driver class. 
+This is typically done using `Class.forName("com.mysql.jdbc.Driver");` for MySQL, for example.
+
+2. **Establishing a Connection:** Once the driver is loaded, you can establish a connection to your database using a JDBC URL, which includes
+information like the database's location, name, and authentication details. For example: `Connection connection = DriverManager.
+getConnection("jdbc:mysql://localhost:3306/mydatabase", "username", "password");`
+
+3. **Creating Statements:** Once a connection is established, you can create a statement object. Statements are used to send SQL
+queries to the database. For example: `Statement statement = connection.createStatement();`
+
+4. **Executing Queries:** With a statement object, you can execute SQL queries against the database. There are two main types of
+queries: `executeQuery()` for retrieving data (e.g., `ResultSet resultSet = statement.executeQuery("SELECT * FROM mytable");`) and
+`executeUpdate()` for modifying data (e.g., `int rowsAffected = statement.executeUpdate("INSERT INTO mytable (column1, column2) VALUES 
+('value1', 'value2');");`).
+
+5. **Processing Results:** If you executed a query that returns results (e.g., a `SELECT` query), you can process the results using a
+`ResultSet` object. You can iterate over the result set to retrieve each row of data.
+
+6. **Closing Resources:** Finally, it's important to close all JDBC resources (such as the `Connection`, `Statement`, and `ResultSet`)
+once you're done using them. This helps release database and network resources and prevents memory leaks. You can do this by calling the `close()` 
+method on each resource.
+
+JDBC provides a standard way for Java applications to interact with databases, making it easier to develop database-driven applications in Java.
