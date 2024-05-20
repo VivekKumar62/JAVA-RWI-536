@@ -1,0 +1,7 @@
+Hibernate is the most used Object/Relational persistence and query service and It is licensed under the open-source GNU Lesser
+General Public License (LGPL). Hibernate not only see the mapping from Java classes to database tables but also provides data query 
+and recovery facilities. Hibernate is free to download.
+
+This Hibernate Tutorial is designed for beginners and experienced professionals, which helps you to use Hibernate to create database-based
+web applications in simple and easy steps and learn fundamental and advanced concepts of Hibernate including setting up Hibernate, mapping Java 
+classes to database tables, performing basic and advanced database operations, utilizing Hibernate Query Language (HQL), and more.
