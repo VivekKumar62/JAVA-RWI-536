@@ -1,0 +1,43 @@
+May 21, 2024 10:39:50 AM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.6.15.Final
+May 21, 2024 10:39:52 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+May 21, 2024 10:39:52 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+May 21, 2024 10:39:52 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/myData]
+May 21, 2024 10:39:52 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+May 21, 2024 10:39:52 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+May 21, 2024 10:39:52 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+May 21, 2024 10:39:54 AM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Hibernate: drop table if exists Answer
+May 21, 2024 10:39:56 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@777d191f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Hibernate: drop table if exists mystudent
+Hibernate: drop table if exists Question
+Hibernate: drop table if exists student_address
+Hibernate: create table Answer (answer_id integer not null, answer varchar(255), primary key (answer_id)) engine=MyISAM
+May 21, 2024 10:39:56 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6bc24e72] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Hibernate: create table mystudent (id integer not null, course varchar(255), duration varchar(255), city varchar(255), name varchar(255), primary key (id)) engine=MyISAM
+Hibernate: create table Question (question_id integer not null, question varchar(255), answer_answer_id integer, primary key (question_id)) engine=MyISAM
+Hibernate: create table student_address (address_id integer not null auto_increment, added_date date, CITY varchar(50), image longblob, is_open bit, street varchar(50), primary key (address_id)) engine=MyISAM
+Hibernate: alter table Question add constraint FKs6ghcwuovtcp489oo5dy7rvk5 foreign key (answer_answer_id) references Answer (answer_id)
+May 21, 2024 10:39:57 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Hibernate: select answer_.answer_id, answer_.answer as answer2_0_ from Answer answer_ where answer_.answer_id=?
+Hibernate: select answer_.answer_id, answer_.answer as answer2_0_ from Answer answer_ where answer_.answer_id=?
+Hibernate: insert into Question (answer_answer_id, question, question_id) values (?, ?, ?)
+Hibernate: insert into Question (answer_answer_id, question, question_id) values (?, ?, ?)
+Hibernate: insert into Answer (answer, answer_id) values (?, ?)
+Hibernate: insert into Answer (answer, answer_id) values (?, ?)
+Hibernate: update Question set answer_answer_id=?, question=? where question_id=?
+Hibernate: update Question set answer_answer_id=?, question=? where question_id=?
+What is your profile?
+I am a software developer
+May 21, 2024 10:39:57 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/myData]
