@@ -1,0 +1,2 @@
+
+In Hibernate, fetching an object refers to retrieving an object from the database. Hibernate provides two main methods for fetching objects: get() and load().
