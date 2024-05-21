@@ -1,2 +1,0 @@
-An embedded object is a special type of Realm object that models complex data about a specific object. Embedded objects are similar to relationships,
-but they provide additional constraints and map more naturally to the denormalized MongoDB document model.
