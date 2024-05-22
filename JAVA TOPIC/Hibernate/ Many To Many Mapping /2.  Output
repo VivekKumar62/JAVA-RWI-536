@@ -1,0 +1,56 @@
+May 22, 2024 9:26:51 AM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.6.15.Final
+May 22, 2024 9:26:52 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+May 22, 2024 9:26:52 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+May 22, 2024 9:26:52 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/myData]
+May 22, 2024 9:26:52 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=root}
+May 22, 2024 9:26:52 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+May 22, 2024 9:26:52 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+May 22, 2024 9:26:53 AM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Hibernate: drop table if exists Employee
+May 22, 2024 9:26:55 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@124d02b2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Hibernate: drop table if exists MyAnswer
+Hibernate: drop table if exists Project
+Hibernate: drop table if exists Project_Employee
+Hibernate: drop table if exists SurveyQuestion
+Hibernate: drop table if exists SurveyQuestion_MyAnswer
+Hibernate: create table Employee (eid integer not null, name varchar(255), primary key (eid)) engine=MyISAM
+May 22, 2024 9:26:55 AM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@76e9f00b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Hibernate: create table MyAnswer (answer_id integer not null, answer varchar(255), primary key (answer_id)) engine=MyISAM
+Hibernate: create table Project (pid integer not null, project_name varchar(255), primary key (pid)) engine=MyISAM
+Hibernate: create table Project_Employee (projects_pid integer not null, emps_eid integer not null) engine=MyISAM
+Hibernate: create table SurveyQuestion (question_id integer not null, question varchar(255), primary key (question_id)) engine=MyISAM
+Hibernate: create table SurveyQuestion_MyAnswer (questions_question_id integer not null, answers_answer_id integer not null) engine=MyISAM
+Hibernate: alter table Project_Employee add constraint FK8p41kmypkmfc6fj8ifrppj727 foreign key (emps_eid) references Employee (eid)
+Hibernate: alter table Project_Employee add constraint FK3h0epgpfw5xc8qof5rf9qhqm2 foreign key (projects_pid) references Project (pid)
+Hibernate: alter table SurveyQuestion_MyAnswer add constraint FK4rvhlm665mksrhmbweqtca8xl foreign key (answers_answer_id) references MyAnswer (answer_id)
+Hibernate: alter table SurveyQuestion_MyAnswer add constraint FKnohes7ut8bye0vwlwdr9r905r foreign key (questions_question_id) references SurveyQuestion (question_id)
+May 22, 2024 9:26:56 AM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Employee Name: Vivek
+Projects: 
+Project Name: Company Website
+Project Name: Hospital Management System
+Project Name: Hospital Management System
+Employees: 
+Employee Name: Vivek
+Employee Name: Bikku
+Hibernate: insert into Employee (name, eid) values (?, ?)
+Hibernate: insert into Employee (name, eid) values (?, ?)
+Hibernate: insert into Project (project_name, pid) values (?, ?)
+Hibernate: insert into Project (project_name, pid) values (?, ?)
+Hibernate: insert into Project_Employee (projects_pid, emps_eid) values (?, ?)
+Hibernate: insert into Project_Employee (projects_pid, emps_eid) values (?, ?)
+Hibernate: insert into Project_Employee (projects_pid, emps_eid) values (?, ?)
+Hibernate: insert into Project_Employee (projects_pid, emps_eid) values (?, ?)
+May 22, 2024 9:26:56 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
+INFO: HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/myData]
