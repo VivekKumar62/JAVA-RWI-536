@@ -1,0 +1,3 @@
+Many-to-Many mapping is usually implemented in database using a Join Table.
+For example we can have Cart and Item table and Cart_Items table for many-to-many mapping.
+Every cart can have multiple items and every item can be part of multiple carts, so we have a many to many mapping here
