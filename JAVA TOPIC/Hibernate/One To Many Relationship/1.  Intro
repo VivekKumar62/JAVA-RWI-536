@@ -1,0 +1,2 @@
+One To Many Mapping in Hibernate. In simple terms, one to many mapping means that one row in a table can be mapped to multiple rows in another table.
+For example, think of a Cart system where we have another table for Items. A cart can have multiple items, so here we have one to many mapping.
