@@ -1,0 +1,3 @@
+In Spring, property injection using the p schema is a convenient way to set bean properties directly in the XML configuration file.
+The p namespace allows you to inject properties by using attribute names prefixed with p:. This approach can make the configuration more concise and readable.
+
