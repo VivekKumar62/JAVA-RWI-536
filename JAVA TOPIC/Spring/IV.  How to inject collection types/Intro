@@ -1,6 +1,7 @@
 ### Injecting Collection Types in Spring
 
-In Spring, you can inject various collection types such as `List`, `Set`, `Map`, and `Properties` into your beans using XML configuration. Here’s a theoretical overview of how to do this for each collection type:
+In Spring, you can inject various collection types such as `List`, `Set`, `Map`, and `Properties` into your beans using XML configuration.
+Here’s a theoretical overview of how to do this for each collection type:
 
 1. **Injecting a `List`:**
    - Use the `<list>` tag within the `<property>` tag.
@@ -22,4 +23,5 @@ In Spring, you can inject various collection types such as `List`, `Set`, `Map`,
    - Define each property using the `<prop>` tag, with the property name as the tag’s key.
    - Often used for configuring key-value pairs such as settings or configuration parameters.
 
-Each of these collection types can be injected into the corresponding properties of a bean, allowing for flexible and modular configuration of complex objects within your Spring application.
+Each of these collection types can be injected into the corresponding properties of a bean, allowing for flexible and modular
+configuration of complex objects within your Spring application.
