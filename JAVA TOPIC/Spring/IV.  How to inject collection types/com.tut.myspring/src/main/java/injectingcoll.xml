@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+
+<bean  class="com.tut.injectingcollection.MyEmp" name="myemp1">
+	<property name="name" value="vivek"></property>
+	<property name="phones">
+		<list>
+			<value>6201662075</value>
+			<value>8757688585</value>
+			<value>7257854141</value>
+			<value>9801877949</value>
+		</list>
+	</property>
+	
+	<property name="addresses">
+		<set>
+			<value>Bhopal</value>
+			<value>Indore</value>
+				<value>Patna</value>
+					<value>Delhi</value>
+		</set>
+	</property>
+	
+	<property name="cources">
+		<map>
+			<entry  key="java" value="4month"/>
+			<entry  key="flutter" value="4month"/>
+			<entry  key="reactjs" value="4month"/>
+			<entry  key="python" value="4month"/>
+		</map>
+	</property>
+	
+	
+	
+  </bean>
+  
+</beans>
+
