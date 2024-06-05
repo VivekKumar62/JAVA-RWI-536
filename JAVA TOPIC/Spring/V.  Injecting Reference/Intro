@@ -1,1 +1,8 @@
-lkkhgjk
+
+In Java Spring, injecting a reference means providing a Spring-managed bean (an instance of a class) to another bean at runtime, allowing Spring to manage the dependencies between different components. This process is known as Dependency Injection (DI). There are several ways to inject dependencies in Spring:
+
+Constructor Injection: Dependencies are provided through the constructor of the class.
+
+Setter Injection: Dependencies are provided through setter methods of the class.
+
+Field Injection: Dependencies are directly injected into the fields of the class.
