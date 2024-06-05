@@ -1,2 +1,0 @@
-Spring, you can define standalone collections such as lists, maps, and properties using the <util:list>,
-<util:map>, and <util:properties> elements respectively. These can be useful for configuring static data or dependencies in your application context.
