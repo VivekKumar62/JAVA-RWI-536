@@ -1,0 +1,5 @@
+Constructor injection in Spring is a form of Dependency Injection (DI) where the dependencies of a class are provided through its constructor.
+This approach ensures that a class is always initialized with all its required dependencies, making it easier to enforce immutability and better testability.
+Constructor Based Dependency Injection is the most recommended dependency injection technique in the Spring Framework.
+This technique involves passing all necessary dependencies for an object as arguments to the constructor.
+The object is created only after all necessary dependencies have been provided
