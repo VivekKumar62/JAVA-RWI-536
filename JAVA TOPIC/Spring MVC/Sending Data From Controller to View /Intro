@@ -1,3 +1,0 @@
-Add Dynamic Data to Views
-The usual route of data transfer from the controller to view is through an array or an object.
-The usual case is that the array or the object is passed as the second parameter of the view load method (something like the following
