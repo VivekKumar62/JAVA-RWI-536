@@ -1,0 +1,2 @@
+The ModelAndView class provides a convenient way to pass both the view name and the model data from the controller to the view, 
+allowing you to separate concerns and keep your controller code clean and focused on handling requests.
