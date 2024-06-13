@@ -1,2 +1,0 @@
-The Expression Language (EL) simplifies the accessibility of data stored in the Java Bean component, and other objects like request,
-session, application etc. There are many implicit objects, operators and reserve words in EL. It is the newly added feature in JSP technology version 2.0.
